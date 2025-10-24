@@ -17,9 +17,13 @@ def sieve_slow(nmax):
     """
 
     all_primes = []
-
+    
     if nmax == 2: 
-        all_primes = [2]
+        return [2]
+    elif nmax == 1:
+        return []
+    elif not isinstance(nmax, int):
+        raise TypeError('Input must be integer type!')
     else:
         primes_head = [2]
         first = 3
@@ -31,7 +35,7 @@ def sieve_slow(nmax):
             primes_tail = np.array([ n for n in primes_tail[1:]
                                     if n not in non_primes ])
 
-    all_primes = primes_head + primes_tail.tolist()
+        all_primes = primes_head + primes_tail.tolist()
     
     return all_primes
 
