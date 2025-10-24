@@ -4,7 +4,7 @@ This reposotory will have all the required files and docs for a small toy projec
 
 We will be exploring the following:
 
-1. Unit tests: the fundamental building block functions
+1. Unit tests: the fundamental building block functions (sieve_slow and sieve_fast are our building blocks)
 2. Integration tests: how our fundamental building block functions are playing with each other as we expect
 3. Regression tests: tests to see if there is any 'drift' in the function output--is it starting to diverge with what we had before?
 
